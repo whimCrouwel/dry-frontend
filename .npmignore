@@ -1,0 +1,7 @@
+src
+*.ts
+*.tsx
+*.spec.ts
+*.test.ts
+tsconfig.json
+node_modules

@@ -1,0 +1,30 @@
+{
+  "name": "@vim-crouwel/dry-frontend",
+  "version": "0.0.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/scss/dry-frontend.scss",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "chokidar \"src/**/*.ts\" -c \"npm run build\""
+  },
+  "keywords": ["frontend", "ui", "components", "effects", "animation"],
+  "author": "vim-crouwel",
+  "license": "ISC",
+  "description": "A lightweight utility library for frontend development with reusable components, effects, functions, and utilities",
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "chokidar-cli": "^2.1.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "animejs": "^4.0.2"
+  }
+}
