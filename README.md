@@ -68,9 +68,36 @@ import { Effects } from '@vim-crouwel/dry-frontend';
 Effects.createBoxRevealer('left'); // or 'right'
 ```
 
+#### Text Animations
+
+Reveal characters with animation:
+
+```typescript
+import { Effects } from '@vim-crouwel/dry-frontend';
+
+// Wrap each character in a span and animate
+Effects.revealChars(targetElement, (startAnimation) => {
+  startAnimation();
+}, 50, 500);
+```
+
+Create a horizontal text sliding effect:
+
+```typescript
+import { Effects } from '@vim-crouwel/dry-frontend';
+
+// Add elements in your HTML
+// <div data-effect="horizontalTextSlide" data-direction="left" data-font-size="4rem" data-duration="10000">
+//   <div>Your text here</div>
+// </div>
+
+// Initialize the horizontal text slide
+Effects.initHorizontalTextSlide();
+```
+
 #### Other Effects
 
-The library also includes other effects like text animations, parallax scrolling, and bob effects. Check the source code for more details on these effects.
+The library also includes other effects like parallax scrolling and bob effects. Check the source code for more details on these effects.
 
 ### Functions
 
